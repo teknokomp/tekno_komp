@@ -42,7 +42,7 @@ class HomepageController extends Controller
         if (! $product) {
             return abort(404);
         }
-        $relatedProducts = Product::where('category_id', $product->category_id)
+        $relatedProducts = Product::where('product_category_id', $product->category_id)
             ->where('id', '!=', $product->id)
             ->take(4)
             ->get();
@@ -64,7 +64,7 @@ class HomepageController extends Controller
     {
         $category = Categories::whereSlug($slug)->first();
         if ($category) {
-            $products = Product::where('category_id', $category->id)->paginate(20);
+            $products = Product::where('product_category_id', $category->id)->paginate(20);
             return view($this->themeFolder . '.category_by_slug', [
                 'slug'     => $slug,
                 'category' => $category,
