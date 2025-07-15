@@ -41,8 +41,8 @@
                         </ul>
                     </div>
                 @else
-                    <a class="btn btn-outline-primary me-2" href="{{ route('customer.login') }}">Login</a>
-                    <a class="btn btn-primary" href="{{ route('customer.register') }}">Register</a>
+                    <a class="btn text-white me-2" style="background:rgb(19, 79, 169);" href="{{ route('customer.login') }}">Login</a>
+                    <a class="btn text-white" style="background:rgb(19, 79, 169);" href="{{ route('customer.register') }}">Register</a>
                 @endif
             </div>
         </div>

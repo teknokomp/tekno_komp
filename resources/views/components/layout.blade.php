@@ -112,7 +112,7 @@
 
         /* Footer Styling */
         footer {
-            background: #0d6efd; /* Bootstrap primary */
+            background:rgb(19, 79, 169); /* Bootstrap primary */
             color: #f8f9fa;
         }
 

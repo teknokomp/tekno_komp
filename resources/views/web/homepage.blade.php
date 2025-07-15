@@ -2,7 +2,7 @@
     <x-slot name="title">Homepage</x-slot>
 
     <!-- Hero Section Full Width Blue -->
-    <section class="py-5 text-white w-100" style="background: #0d6efd;">
+    <section class="py-5 text-white w-100" style="background:rgb(19, 79, 169);">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-4 mb-md-0">
